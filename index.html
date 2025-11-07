@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Primeiro Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f3f3f3;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      font-size: 1.5em;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>Bem-vindo ao meu site!</header>
+  <main>
+    <h1>Olá, mundo! 🌍</h1>
+    <p>Este é o meu primeiro site feito pelo celular!</p>
+    <button onclick="mudarTexto()">Clique aqui</button>
+    <p id="mensagem"></p>
+  </main>
+
+  <script>
+    function mudarTexto() {
+      document.getElementById('mensagem').textContent = "Você clicou no botão! 😄";
+    }
+  </script>
+</body>
+</html>
